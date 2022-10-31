@@ -1,0 +1,35 @@
+Package: crc
+Title: Competing Risks Combined
+Version: 0.0.0.9000
+Authors@R: 
+    person("Daniel D.", "Sjoberg", , "danield.sjoberg@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0862-2018"))
+Description: Use two independently estimated risks of death from other
+    causes and death from disease to get a corrected estimate of risk of
+    death from disease.  For example, given a patient's risk of death from
+    cancer based on their oncologic burden and their risk of death from
+    other causes based on their comorbidities, we calculate an adjusted
+    risk of death from cancer. To illustrate the importance of this
+    correction, image two patients with identical disease burden, and
+    therefore, identical predicted risk of death from disease.  Now
+    imagine, that one of these patients also has sever heart disease and
+    it likely we pass away from hear disease before they would succumb to
+    the cancer. Our correction makes the appropriate update to the risk of
+    death from disease incorporating the risk of death from other causes.
+License: MIT + file LICENSE
+Depends: 
+    R (>= 4.0.0)
+Suggests: 
+    dplyr,
+    ggplot2,
+    knitr,
+    rmarkdown,
+    spelling
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Language: en-US
+Imports: 
+    cli
