@@ -6,6 +6,13 @@
 \usage{
 update_cancer_death_risk(risk_cancer_death, risk_other_cause, time)
 }
+\arguments{
+\item{risk_cancer_death}{risk of death from cancer within time \verb{t=}}
+
+\item{risk_other_cause}{risk of death from other causes within time \verb{t=}}
+
+\item{time}{time frame associated with the risk predictions above.}
+}
 \description{
 Provided a risk estimate of death from cancer and an estimate for death
 from other causes, this function will combine the two risks assuming

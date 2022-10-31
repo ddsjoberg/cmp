@@ -12,9 +12,15 @@ prob_to_exp_lambda(p, time = 1)
 \item{time}{a single numeric time that is the time frame for the probability
 in \verb{p=}}
 }
+\value{
+numeric lambda greater than zero
+}
 \description{
 Function takes a vector of probability estimates and a time frame,
 e.g. probability of death within 10 years, and converts the probability
 into an exponential distribution lambda parameter. The lambda parameter
 is the \emph{rate} parameter, e.g. \code{f(x) = lambda * exp(-lambda * x)}
+}
+\examples{
+prob_to_exp_lambda(0.5)
 }

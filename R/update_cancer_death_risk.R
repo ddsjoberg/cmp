@@ -3,6 +3,10 @@
 #' Provided a risk estimate of death from cancer and an estimate for death
 #' from other causes, this function will combine the two risks assuming
 #' an exponential distribution for both.
+#'
+#' @param risk_cancer_death risk of death from cancer within time `t=`
+#' @param risk_other_cause risk of death from other causes within time `t=`
+#' @param time time frame associated with the risk predictions above.
 
 update_cancer_death_risk <- function(risk_cancer_death, risk_other_cause, time) {
   lambda_cancer_death <- prob_to_exp_lambda(risk_cancer_death, time = time)
@@ -25,6 +29,11 @@ update_cancer_death_risk <- function(risk_cancer_death, risk_other_cause, time) 
 #' @param p  numeric vector of probability estimates
 #' @param time a single numeric time that is the time frame for the probability
 #' in `p=`
+#'
+#' @return numeric lambda greater than zero
+#' @export
+#' @examples
+#' prob_to_exp_lambda(0.5)
 prob_to_exp_lambda <- function(p, time = 1) {
   -log(1 - p) / time
 }
