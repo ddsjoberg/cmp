@@ -7,6 +7,11 @@
 #' @param risk_cancer_death risk of death from cancer within time `t=`
 #' @param risk_other_cause risk of death from other causes within time `t=`
 #' @param time time frame associated with the risk predictions above.
+#'
+#' @export
+#' @return numeric probability between zero and one
+#' @examples
+#' update_cancer_death_risk(0.5, 0.5, time = 10)
 
 update_cancer_death_risk <- function(risk_cancer_death, risk_other_cause, time) {
   lambda_cancer_death <- prob_to_exp_lambda(risk_cancer_death, time = time)

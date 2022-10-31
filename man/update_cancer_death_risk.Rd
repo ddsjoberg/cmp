@@ -13,8 +13,14 @@ update_cancer_death_risk(risk_cancer_death, risk_other_cause, time)
 
 \item{time}{time frame associated with the risk predictions above.}
 }
+\value{
+numeric probability between zero and one
+}
 \description{
 Provided a risk estimate of death from cancer and an estimate for death
 from other causes, this function will combine the two risks assuming
 an exponential distribution for both.
+}
+\examples{
+update_cancer_death_risk(0.5, 0.5, time = 10)
 }
