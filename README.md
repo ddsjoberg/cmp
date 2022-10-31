@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/ddsjoberg/crc/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ddsjoberg/crc/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/ddsjoberg/crc/branch/main/graph/badge.svg)](https://app.codecov.io/gh/ddsjoberg/crc?branch=main)
 <!-- badges: end -->
 
 Use two independently estimated risks of death from other causes and
@@ -34,7 +36,7 @@ devtools::install_github("ddsjoberg/crc")
 ## Example
 
 In the example below, we see how the risk for two patients are updated:
-one healthy and the other comrobid with a high probability of death from
+one healthy and the other comorbid with a high probability of death from
 other causes.
 
 ``` r

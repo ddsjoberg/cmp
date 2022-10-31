@@ -37,7 +37,7 @@ devtools::install_github("ddsjoberg/crc")
 
 ## Example
 
-In the example below, we see how the risk for two patients are updated: one healthy and the other comrobid with a high probability of death from other causes.
+In the example below, we see how the risk for two patients are updated: one healthy and the other comorbid with a high probability of death from other causes.
 
 ```{r example}
 library(crc)
