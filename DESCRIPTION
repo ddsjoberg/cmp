@@ -20,11 +20,13 @@ License: MIT + file LICENSE
 Depends: 
     R (>= 4.0.0)
 Suggests: 
+    covr,
     dplyr,
     ggplot2,
     knitr,
     rmarkdown,
-    spelling
+    spelling,
+    testthat (>= 3.0.0)
 VignetteBuilder: 
     knitr
 Encoding: UTF-8
@@ -32,3 +34,4 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
 Language: en-US
 URL: http://www.danieldsjoberg.com/crc/
+Config/testthat/edition: 3

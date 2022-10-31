@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/ddsjoberg/crc/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ddsjoberg/crc/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/ddsjoberg/crc/branch/main/graph/badge.svg)](https://app.codecov.io/gh/ddsjoberg/crc?branch=main)
 <!-- badges: end -->
 
 Use two independently estimated risks of death from other causes and death from disease to get a corrected estimate of risk of death from disease.
